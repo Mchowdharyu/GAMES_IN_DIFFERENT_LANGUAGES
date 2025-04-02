@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floppy Bird</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+         table, th, td {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+}
+    #leftbox {
+        float:left;
+        width:75%;
+    }
+    #rightbox{
+        float:right;
+        
+        width:25%;
+        height:280px;
+    } 
+
+    
+</style>
+  <body>
+  <div style="
+  color: blue; font-size: 36px;" id="txtr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Flappy Bird</div>
+  <br/>
+  <div id="rightbox">
+    <h2><b>:: Score Card ::</b></h2>
+    <table id="customers" style="border:1px solid black;">    
+  </table>  
+  </div>
+  <div id="leftbox">
+   
+
+  <div>&nbsp;&nbsp;&nbsp;
+     <div style="text-align: left;
+    color: red; font-size: 16px;"><b>Your Name: </b></div>&nbsp;&nbsp;&nbsp;<input id="namePlayer" type="text" value="Chris"/></div>
+  <br/>
+  <button id="replay" style="display: none;"> Play Again </button>
+  <br/>
+  <p>1.Enter your Name in the above text box.<br/>
+     2.click space bar to move the bird.<br/>
+      3. Enjoy the Game
+    4. check score card on right side. </p>
+    <canvas id="canvas1"></canvas>
+  
+    <script src="bird.js"></script>
+    <script src="particles.js"></script>
+    <script src="obstacles.js"></script>
+    <script src="main.js"></script>
+  </div>
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
